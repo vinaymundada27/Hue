@@ -42,7 +42,7 @@ var Column = function (size, rows) {
   };
   self.addRow = function (row, atBeginning, atIndex) {
     if (typeof row == "undefined" || row == null) {
-      row = new self.rowPrototype([], viewModel); // Hacky but needed when a new row is deleted
+      row = new self.rowPrototype([], searchViewModel); // Hacky but needed when a new row is deleted
     }
 
     if (typeof atIndex != "undefined" && atIndex != null) {
