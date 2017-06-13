@@ -392,7 +392,7 @@ DropOperations
  | 'DROP' '<impala>COLUMN' ColumnIdentifier
  ;
 
-DropOperations
+DropOperations_EDIT
  : 'DROP' 'CURSOR'
    {
      if (parser.isHive()) {
