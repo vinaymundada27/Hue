@@ -16,7 +16,7 @@
 
 var version = 20;
 importScripts('${ static('desktop/js/autocomplete/sqlParseSupport.js') }' + '?version=' + version);
-importScripts('${ static('desktop/js/autocomplete/sql.js') }' + '?version=' + version);
+importScripts('${ static('desktop/js/autocomplete/sqlAutocompleteParser.js') }' + '?version=' + version);
 importScripts('${ static('desktop/js/sqlFunctions.js') }' + '?version=' + version);
 
 (function () {
