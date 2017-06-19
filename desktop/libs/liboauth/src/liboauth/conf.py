@@ -46,6 +46,14 @@ CONSUMER_KEY_LINKEDIN = Config(
       type=str,
       default=""
     )
+CONSUMER_KEY_MICROSOFT_AZURE = Config(
+      key="consumer_key_microsoftazure",
+      help=_t("The Consumer key of the Azure application."),
+      type=str,
+      default=""
+    )
+
+#####################################################################################################3
 
 CONSUMER_SECRET_TWITTER = Config(
       key="consumer_secret_twitter",
@@ -71,7 +79,14 @@ CONSUMER_SECRET_LINKEDIN = Config(
       type=str,
       default=""
     )
+CONSUMER_SECRET_MICROSOFT_AZURE = Config(
+      key="consumer_secret_microsoftazure",
+      help=_t("The Consumer secret of the Azure application."),
+      type=str,
+      default=""
+    )
 
+#######################################################################################
 
 REQUEST_TOKEN_URL_TWITTER = Config(
       key="request_token_url_twitter",
@@ -97,6 +112,14 @@ REQUEST_TOKEN_URL_LINKEDIN = Config(
       type=str,
       default="https://www.linkedin.com/uas/oauth2/authorization"
     )
+REQUEST_TOKEN_URL_MICROSOFT_AZURE = Config(
+      key="request_token_url_microsoftazure",
+      help=_t("The Microsoft_Azure Request token URL."),
+      type=str,
+      default="https://MSAZURE.com/oauth/request_token"
+    )
+
+########################################################################################
 
 ACCESS_TOKEN_URL_TWITTER = Config(
       key="access_token_url_twitter",
@@ -122,7 +145,14 @@ ACCESS_TOKEN_URL_LINKEDIN = Config(
       type=str,
       default="https://api.linkedin.com/uas/oauth2/accessToken"
     )
+ACCESS_TOKEN_URL_MICROSOFT_AZURE = Config(
+      key="access_token_url_microsoftazure",
+      help=_t("The Microsoft_Azure Access token URL."),
+      type=str,
+      default="https://MSAZURE.com/oauth/access_token"
+    )
 
+########################################################################################
 
 AUTHORIZE_URL_TWITTER = Config(
       key="authenticate_url_twitter",
@@ -148,6 +178,13 @@ AUTHORIZE_URL_LINKEDIN = Config(
       type=str,
       default="https://api.linkedin.com/v1/people/~"
     )
+AUTHORIZE_URL_MICROSOFT_AZURE = Config(
+      key="authenticate_url_microsoftazure",
+      help=_t("The Microsoft_Azure Authorize URL."),
+      type=str,
+      default="https://www.MSAZURE.com/oauth2/v1/userinfo"
+    )
+########################################################################################
 
 WHITELISTED_DOMAINS_GOOGLE = Config(
     key="whitelisted_domains_google",
